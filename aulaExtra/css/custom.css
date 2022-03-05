@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size: 26px;
+    font-weight: 700;
+}
+main{
+    background-color: rgba(124, 54, 165, 0.638);
+}
+.principal{
+    margin:0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 200px; */
+    width: 70%;
+    height: 500px;
+    background-color: #f2f4f6;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px #000;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.tables{
+    margin-top: 15px;
+}
+
