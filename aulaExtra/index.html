@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula extra</title>
-    <link rel="stylesheet" href="/css/custom.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="/aulaExtra/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -15,23 +15,23 @@
         <header>
             <div class="container">
                 <header class="d-flex justify-content-center py-3">
-                  <ul class="nav nav-pills">
-                    <!-- <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
+                    <ul class="nav nav-pills">
+                        <!-- <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Aluno</a></li> -->
-                    <!-- <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                        <!-- <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
-                  </ul>
+                    </ul>
                 </header>
-              </div>
+            </div>
         </header>
         <section class="principal">
             <!--TITULO DA PAG-->
             <section>
                 <div class="container">
                     <div class="row">
-                        <div class="col" >
-                        <p class="title">Formulário</p>
+                        <div class="col">
+                            <p class="title">Formulário</p>
                         </div>
                     </div>
                 </div>
@@ -52,31 +52,32 @@
                     <div class="col-4">
                         <!--ENTRADA DE DATA-->
                         <section class="data">
-                            Data: <input type="date" id="data"></input>
+                            Data: <input type="date" id="dataInicio"></input>
                         </section>
                     </div>
 
                     <div class="col">
                         <!--ENTRADA DE HORA-->
                         <section class="hora">
-                            Hora Inicio: <input type="time" id="horaInicial"></input>
+                            Hora Inicio: <input type="time" id="horaInicialInput"></input>
                         </section>
 
-                    <div class="col">
-                        <section class="hora">
-                            Hora Final  : <input type="time" id="horaFinal"></input>
-                        </section>
-                    </div>
+                        <div class="col">
+                            <section class="hora">
+                                Hora Final : <input type="time" id="horaFinalInput"></input>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            
+
+
             <!-- CAMPO DE OBSERVAÇÕES-->
             <section class="text-input">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Matéria: </span>
-                    <input class="form-control form-control-lg" type="text" placeholder="Digite o texto aqui" aria-label=".form-control-lg example" id="materia">
+                    <input class="form-control form-control-lg" type="text" placeholder="Digite o texto aqui"
+                        aria-label=".form-control-lg example" id="materia">
                 </div>
                 <!-- <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Dificuldade: </span>
@@ -87,42 +88,44 @@
                     <option value="1" class="select">Fácil</option>
                     <option value="2" class="select">Médio</option>
                     <option value="3" class="select">Difícil</option>
-                  </select>
+                </select>
                 <div class="buttons">
-                    <button type="button" class="btn btn-outline-success" id="confirmar" onclick="verificaAluno()">Confirmar</button>
-                    <button type="button" class="btn btn-danger" id="cancelar">Cancelar</button>
+                    <button type="button" class="btn btn-outline-success" id="confirmar"
+                        onclick="verificaAluno()">Confirmar</button>
+                    <button type="button" class="btn btn-danger" id="cancelar" onclick="limparDados()">Cancelar</button>
                 </div>
-                
+
 
 
                 <section class="tables">
                     <table class="table table-striped">
                         <thead>
-                          <tr>
-                            <th scope="col" >Aluno</th>
-                            <th scope="col">Data</th>
-                            <th scope="col">Hora Inicio</th>
-                            <th scope="col">Hora Final</th>
-                            <th scope="col">Matéria</th>
-                            <th scope="col">Dificuldade</th>
-                          </tr>
+                            <tr>
+                                <th scope="col">Aluno</th>
+                                <th scope="col">Data</th>
+                                <th scope="col">Hora Inicio</th>
+                                <th scope="col">Hora Final</th>
+                                <th scope="col">Matéria</th>
+                                <th scope="col">Dificuldade</th>
+                            </tr>
                         </thead>
+
                         <tbody>
-                          <tr>
-                            <th scope="row" id="aluno">Aluno1</th>
-                            <td>00/00/00</td>
-                            <td>00:00</td>
-                            <td>00:00</td>
-                            <td>Matemática</td>
-                            <td>Dificil</td>
-                          </tr>
+                            <tr class="dados">
+                                <th scope="row" id="alunoTable">Aluno1</th>
+                                <td id="resData">00/00/00</td>
+                                <td id="horaInicial">00:00</td>
+                                <td id="horaFinal">00:00</td>
+                                <td id="materiaTable">Matemática</td>
+                                <td id="dificuldade">Dificil</td>
+                            </tr>
                         </tbody>
-                      </table>
+                    </table>
                 </section>
             </section>
         </section>
-        
-        
+
+
 
     </main>
 
